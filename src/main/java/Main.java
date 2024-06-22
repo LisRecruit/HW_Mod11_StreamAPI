@@ -1,3 +1,4 @@
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -17,6 +18,10 @@ public class Main {
 
         String[] strArr = {"1, -2, 0", "4, 5"};
         Tools.stringNumsToIntArray(strArr);
+
+        Tools.randomNum()
+                .limit(3)
+                .forEach(System.out::println);
 
         Path file1 = Paths.get("Test1.txt");
         Path file2 = Paths.get("Test2.txt");
